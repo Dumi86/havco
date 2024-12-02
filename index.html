@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havco Agricultural Equipment | South Africa's Premier Equipment Supplier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">HAVCO</a>
+        </div>
+        <div class="nav-links">
+            <a href="#equipment">Equipment</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Professional Agricultural Equipment</h1>
+            <p>Supplying South Africa's farming community with top-tier machinery</p>
+            <button class="glossy-button" onclick="location.href='#equipment'">View Equipment</button>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Havco</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Your Trusted Farming Equipment Manufactorer Since 1978</h3>
+                    <p>Havco has been at the forefront of agricultural innovation in South Africa for over four decades. We specialize in providing high-quality farming equipment to commercial and small-scale farmers.</p>
+                    <p>Our commitment to excellence and customer satisfaction has made us a leader in the agricultural sector.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>40+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>1000+</h4>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>24/7</h4>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Havco History">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipment" class="equipment-showcase">
+        <div class="search-filter">
+            <input type="text" placeholder="Search equipment..." id="searchInput">
+            <select id="categoryFilter">
+                <option value="all">All Equipment</option>
+                <option value="tractors">Tractors</option>
+                <option value="sprayers">Crop Sprayers</option>
+                <option value="harvesters">Harvesters</option>
+                <option value="planters">Planters</option>
+                <option value="irrigation">Irrigation</option>
+                <option value="spreaders">Spreaders</option>
+            </select>
+        </div>
+        <div class="equipment-grid" id="equipmentGrid">
+            <!-- Equipment cards will be inserted here by JavaScript -->
+        </div>
+    </section>
+      <section id="contact" class="contact-section">
+          <h2>Contact Us</h2>
+          <div class="contact-container">
+              <div class="contact-info">
+                  <div class="social-links">
+                      <h3>Follow Us</h3>
+                      <a href="https://facebook.com" target="_blank">Facebook</a>
+                      <a href="https://twitter.com" target="_blank">Twitter</a>
+                      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                      <a href="https://instagram.com" target="_blank">Instagram</a>
+                  </div>
+              </div>
+              <form class="contact-form">
+                  <h3>Send Us a Message</h3>
+                  <input type="text" placeholder="Your Name" required>
+                  <input type="email" placeholder="Your Email" required>
+                  <select required>
+                      <option value="">Select Department</option>
+                      <option value="sales">Sales</option>
+                      <option value="support">Technical Support</option>
+                      <option value="general">General Inquiry</option>
+                  </select>
+                  <textarea placeholder="Your Message" rows="5" required></textarea>
+                  <button type="submit" class="glossy-button">Send Message</button>
+              </form>
+          </div>
+          <div class="map-container">
+              <h3>Find Us Here</h3>
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.0!2d29.2398!3d-26.9453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eea41c7b7b7b7b7%3A0x1b1b1b1b1b1b1b1b!2s28+Factory+Street%2C+Standerton%2C+2430!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
+                  width="100%" 
+                  height="450" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy">
+              </iframe>
+          </div>
+      </section>
+    <section class="video-showcase">
+        <div class="video-container">
+            <video width="100%" height="500" controls poster="images/video-placeholder.jpg">
+                <source src="videos/havco-showcase.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>28 Factory Street</p>
+                <p>Standerton, 2430</p>
+            </div>
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 8:00 - 17:00</p>
+                <p>Saturday: 9:00 - 13:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
